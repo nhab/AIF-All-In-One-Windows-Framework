@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{03618A89-8864-4B0F-8326-22C6356F62A5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>IFramework</RootNamespace>
+    <AssemblyName>IFramework</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Renci.SshNet">
+      <HintPath>..\packages\SSH.NET.2016.1.0\lib\net40\Renci.SshNet.dll</HintPath>
+    </Reference>
+    <Reference Include="SourceLibrary, Version=1.2.0.0, Culture=neutral, PublicKeyToken=96907d46c0a9af87">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Libraries\SourceLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controller\ActiveDirectoryUserManagement.cs" />
+    <Compile Include="Controller\RoleController.cs" />
+    <Compile Include="Controller\UserController.cs" />
+    <Compile Include="Controls\DateTimeRangePickerJ.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\DateTimeRangePickerJ.Designer.cs">
+      <DependentUpon>DateTimeRangePickerJ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\frmShowTextDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\frmShowTextDialog.Designer.cs">
+      <DependentUpon>frmShowTextDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\cmdHelper.cs" />
+    <Compile Include="Helpers\CredentialFileHelper.cs" />
+    <Compile Include="Helpers\DateTimeHelper.cs" />
+    <Compile Include="Helpers\DB\DBHelper.cs" />
+    <Compile Include="Helpers\DB\DBOperationsStatistics.cs" />
+    <Compile Include="Helpers\DirectoryHelper.cs" />
+    <Compile Include="Helpers\EncryptionHelper.cs" />
+    <Compile Include="Helpers\FileHelper.cs" />
+    <Compile Include="Helpers\FtpHelper.cs" />
+    <Compile Include="Helpers\OfficeHelper.cs" />
+    <Compile Include="Helpers\PersianHelper.cs" />
+    <Compile Include="Helpers\DB\QueryBuildHelper.cs" />
+    <Compile Include="Helpers\ProjectHelper.cs" />
+    <Compile Include="Helpers\SFTPHelper.cs" />
+    <Compile Include="Helpers\SourcGridHelper.cs" />
+    <Compile Include="Helpers\StringHelper.cs" />
+    <Compile Include="Helpers\webserviceHelper.cs" />
+    <Compile Include="Helpers\WindowsControls\ComboboxHelper.cs" />
+    <Compile Include="Helpers\WindowsControls\ControlFormat.cs" />
+    <Compile Include="Helpers\WindowsControls\dataGridViewHelper.cs" />
+    <Compile Include="Helpers\WindowsControls\DateTimePickerHelper.cs" />
+    <Compile Include="Helpers\DynamicGeneration\DynamicFormHelper.cs" />
+    <Compile Include="Helpers\WindowsControls\FormHelper.cs" />
+    <Compile Include="Helpers\WindowsControls\ListViewHelper.cs" />
+    <Compile Include="Helpers\DynamicGeneration\DynamicToolbarsHelper.cs" />
+    <Compile Include="Helpers\ZipHelper.cs" />
+    <Compile Include="Model\Role.cs" />
+    <Compile Include="Model\User.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Controls\DateTimeRangePickerJ.resx">
+      <DependentUpon>DateTimeRangePickerJ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\frmShowTextDialog.resx">
+      <DependentUpon>frmShowTextDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\filt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\filter.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\filter-3-128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\excel-128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\Copy-128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Libraries\SourceGrid\SourceGrid.csproj">
+      <Project>{2a5a1657-dba8-4117-8e2a-9f1236ace9e2}</Project>
+      <Name>SourceGrid</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
