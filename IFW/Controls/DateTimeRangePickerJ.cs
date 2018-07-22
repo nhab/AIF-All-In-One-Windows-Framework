@@ -86,6 +86,16 @@ namespace IFramework.Controls
             txtToJalali.Text = PersianHelper.ConvertToJalaliDate((sender as DateTimePicker).Value);
 
         }
+        public void HideJaliEquevalents()
+        {
+            txtFromJalali.Visible = false;
+            txtToJalali.Visible = false;
+        }
+        public void ShowJaliEquevalents()
+        {
+            txtFromJalali.Visible = true;
+            txtToJalali.Visible = true;
+        }
         public string GetFromDateJ()
         {
       

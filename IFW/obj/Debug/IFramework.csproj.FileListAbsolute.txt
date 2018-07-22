@@ -1,0 +1,15 @@
+C:\Root\prjs\ifw\IFW-windows-Framework\IFW\bin\Debug\IFramework.dll
+C:\Root\prjs\ifw\IFW-windows-Framework\IFW\bin\Debug\IFramework.pdb
+C:\Root\prjs\ifw\IFW-windows-Framework\IFW\bin\Debug\Renci.SshNet.dll
+C:\Root\prjs\ifw\IFW-windows-Framework\IFW\bin\Debug\SourceGrid.dll
+C:\Root\prjs\ifw\IFW-windows-Framework\IFW\bin\Debug\SourceGrid.pdb
+C:\Root\prjs\ifw\IFW-windows-Framework\IFW\bin\Debug\SourceGrid.xml
+C:\Root\prjs\ifw\IFW-windows-Framework\IFW\bin\Debug\Renci.SshNet.xml
+C:\Root\prjs\ifw\IFW-windows-Framework\IFW\obj\Debug\IFramework.csprojResolveAssemblyReference.cache
+C:\Root\prjs\ifw\IFW-windows-Framework\IFW\obj\Debug\IFramework.csproj.ResolveComReference.cache
+C:\Root\prjs\ifw\IFW-windows-Framework\IFW\obj\Debug\IFramework.Controls.DateTimeRangePickerJ.resources
+C:\Root\prjs\ifw\IFW-windows-Framework\IFW\obj\Debug\IFramework.Controls.frmShowTextDialog.resources
+C:\Root\prjs\ifw\IFW-windows-Framework\IFW\obj\Debug\IFramework.Properties.Resources.resources
+C:\Root\prjs\ifw\IFW-windows-Framework\IFW\obj\Debug\IFramework.csproj.GenerateResource.Cache
+C:\Root\prjs\ifw\IFW-windows-Framework\IFW\obj\Debug\IFramework.dll
+C:\Root\prjs\ifw\IFW-windows-Framework\IFW\obj\Debug\IFramework.pdb

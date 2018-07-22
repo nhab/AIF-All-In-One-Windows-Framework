@@ -16,7 +16,13 @@ namespace IFramework.Helpers.WindowsControls
         public static string FontFamily = "serif";
         public static Color HeaderColor = Color.MintCream;
 
-        public static void AddHeader(ref Form f,string headerText)
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="f"></param>
+        /// <param name="headerText"></param>
+        /// <returns>The First Vertical Location after header (Header top+ Header Height)</returns>
+        public static int AddHeader(ref Form f,string headerText)
         {
             Label lbl = new Label();
             lbl.Font = new System.Drawing.Font(FontFamily, Header_FontSize);
@@ -29,6 +35,8 @@ namespace IFramework.Helpers.WindowsControls
             lbl.BorderStyle = BorderStyle.Fixed3D;
             lbl.BackColor = HeaderColor;
             f.Controls.Add(lbl);
+            f.Text = headerText;
+            return lbl.Top + lbl.Height;
         }
         public static void MaximizeForm(ref Form f)
         {
@@ -36,6 +44,7 @@ namespace IFramework.Helpers.WindowsControls
             f.MinimumSize = new Size(Screen.PrimaryScreen.Bounds.Width, Screen.PrimaryScreen.Bounds.Height);
             Rectangle r = GetScreen(ref f);
             f.Height = r.Height;
+            
         }
         public static Rectangle GetScreen(ref Form f)
         {

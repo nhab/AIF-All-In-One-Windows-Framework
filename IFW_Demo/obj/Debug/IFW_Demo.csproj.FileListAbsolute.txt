@@ -1,0 +1,16 @@
+C:\Root\prjs\ifw\IFW-windows-Framework\IFW_Demo\bin\Debug\IFW_Demo.exe.config
+C:\Root\prjs\ifw\IFW-windows-Framework\IFW_Demo\bin\Debug\IFW_Demo.exe
+C:\Root\prjs\ifw\IFW-windows-Framework\IFW_Demo\bin\Debug\IFW_Demo.pdb
+C:\Root\prjs\ifw\IFW-windows-Framework\IFW_Demo\bin\Debug\IFramework.dll
+C:\Root\prjs\ifw\IFW-windows-Framework\IFW_Demo\bin\Debug\Renci.SshNet.dll
+C:\Root\prjs\ifw\IFW-windows-Framework\IFW_Demo\bin\Debug\SourceGrid.dll
+C:\Root\prjs\ifw\IFW-windows-Framework\IFW_Demo\bin\Debug\IFramework.pdb
+C:\Root\prjs\ifw\IFW-windows-Framework\IFW_Demo\bin\Debug\Renci.SshNet.xml
+C:\Root\prjs\ifw\IFW-windows-Framework\IFW_Demo\bin\Debug\SourceGrid.pdb
+C:\Root\prjs\ifw\IFW-windows-Framework\IFW_Demo\bin\Debug\SourceGrid.xml
+C:\Root\prjs\ifw\IFW-windows-Framework\IFW_Demo\obj\Debug\IFW_Demo.csprojResolveAssemblyReference.cache
+C:\Root\prjs\ifw\IFW-windows-Framework\IFW_Demo\obj\Debug\IFW_Demo.frmMain.resources
+C:\Root\prjs\ifw\IFW-windows-Framework\IFW_Demo\obj\Debug\IFW_Demo.Properties.Resources.resources
+C:\Root\prjs\ifw\IFW-windows-Framework\IFW_Demo\obj\Debug\IFW_Demo.csproj.GenerateResource.Cache
+C:\Root\prjs\ifw\IFW-windows-Framework\IFW_Demo\obj\Debug\IFW_Demo.exe
+C:\Root\prjs\ifw\IFW-windows-Framework\IFW_Demo\obj\Debug\IFW_Demo.pdb
