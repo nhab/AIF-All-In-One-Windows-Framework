@@ -37,7 +37,7 @@ namespace IFW_Demo
             grdMaster = new Grid();
             f.Controls.Add(grdMaster);
             Point loc = new System.Drawing.Point(10, top+dtPicker.Height+10);
-            Size  siz = new Size(f.Width - 30, 310);
+            Size  siz = new Size(f.Width - 30, 200);
             grdMaster = SourceGridHelper.Create(ref f, loc, siz);
 
             RefreshGridMaster(ref grdMaster);
@@ -45,8 +45,8 @@ namespace IFW_Demo
             grdDetail = new Grid();
             f.Controls.Add(grdDetail);
             Point loc2 = new System.Drawing.Point(10, grdMaster.Top+grdMaster.Height + 10);
-            Size siz2 = new Size(f.Width - 30, 310);
-            grdDetail = SourceGridHelper.Create(ref f, loc, siz);
+            Size siz2 = new Size(f.Width - 30, 200);
+            grdDetail = SourceGridHelper.Create(ref f, loc2, siz2);
 
             grdMaster.Click += grdMaster_Click;
             grdMaster.PreviewKeyDown += GrdMaster_PreviewKeyDown;
