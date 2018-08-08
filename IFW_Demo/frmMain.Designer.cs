@@ -35,6 +35,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.btnInputBox = new System.Windows.Forms.Button();
             this.btnIOLib = new System.Windows.Forms.Button();
+            this.btnQueryAnalyser = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnHoverButton
@@ -51,7 +52,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Silver;
-            this.panel1.Location = new System.Drawing.Point(635, 61);
+            this.panel1.Location = new System.Drawing.Point(662, 61);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(146, 79);
@@ -134,11 +135,23 @@
             this.btnIOLib.UseVisualStyleBackColor = true;
             this.btnIOLib.Click += new System.EventHandler(this.btnIOLib_Click);
             // 
+            // btnQueryAnalyser
+            // 
+            this.btnQueryAnalyser.Location = new System.Drawing.Point(568, 65);
+            this.btnQueryAnalyser.Margin = new System.Windows.Forms.Padding(2);
+            this.btnQueryAnalyser.Name = "btnQueryAnalyser";
+            this.btnQueryAnalyser.Size = new System.Drawing.Size(86, 32);
+            this.btnQueryAnalyser.TabIndex = 8;
+            this.btnQueryAnalyser.Text = "Query Analyser";
+            this.btnQueryAnalyser.UseVisualStyleBackColor = true;
+            this.btnQueryAnalyser.Click += new System.EventHandler(this.btnQueryAnalyser_Click);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(885, 354);
+            this.Controls.Add(this.btnQueryAnalyser);
             this.Controls.Add(this.btnIOLib);
             this.Controls.Add(this.btnInputBox);
             this.Controls.Add(this.button2);
@@ -151,6 +164,7 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmMain";
             this.Text = "GridView";
+            this.Load += new System.EventHandler(this.frmMain_Load);
             this.Click += new System.EventHandler(this.frmMain_Click);
             this.ResumeLayout(false);
 
@@ -167,4 +181,5 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btnInputBox;
         private System.Windows.Forms.Button btnIOLib;
-    }
+    private System.Windows.Forms.Button btnQueryAnalyser;
+}

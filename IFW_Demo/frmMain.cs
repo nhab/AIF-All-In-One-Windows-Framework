@@ -154,7 +154,19 @@ using WindowsControls;
             Cursor.Current = Cursors.Default;
         }
 
-        public static void RefreshGridDetail(ref Grid grdDetail, string loc)
+    private void frmMain_Load(object sender, EventArgs e)
+    {
+     }
+
+    private void btnQueryAnalyser_Click(object sender, EventArgs e)
+    {
+        queryanalyser qf = new queryanalyser();
+        qf.FormBorderStyle = FormBorderStyle.Fixed3D;
+        qf.ShowDialog();
+
+    }
+
+    public static void RefreshGridDetail(ref Grid grdDetail, string loc)
         {
             Cursor.Current = Cursors.WaitCursor;
             string[] cols = { "Item", "Value" };

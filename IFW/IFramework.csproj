@@ -58,6 +58,18 @@
     <Compile Include="Controls\clHoverButton.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Controls\comboBoxEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\comboBoxEx.Designer.cs">
+      <DependentUpon>comboBoxEx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ConnectionStr.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ConnectionStr.Designer.cs">
+      <DependentUpon>ConnectionStr.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\csIOLib\Directory.cs" />
     <Compile Include="Controls\csIOLib\File.cs" />
     <Compile Include="Controls\csIOLib\FileCopyEventArgs.cs" />
@@ -78,6 +90,12 @@
     <Compile Include="Controls\EditableGrid.Designer.cs">
       <DependentUpon>EditableGrid.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controls\exTextBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\exTextBox.Designer.cs">
+      <DependentUpon>exTextBox.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\frmShowTextDialog.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -90,6 +108,15 @@
     </Compile>
     <Compile Include="Controls\InputBox.cs">
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\ListViewGrid.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ListViewGrid.Designer.cs">
+      <DependentUpon>ListViewGrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MASKEDTEXTBOX.CS">
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="Controls\PJLControls\COLOURPANEL.CS" />
     <Compile Include="Controls\PJLControls\COLOURPANELFORM.CS">
@@ -108,10 +135,14 @@
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Controls\PJLControls\UTILS.CS" />
+    <Compile Include="Controls\ucFolderSelect.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="Helpers\cmdHelper.cs" />
     <Compile Include="Helpers\CredentialFileHelper.cs" />
     <Compile Include="Helpers\DateTimeHelper.cs" />
     <Compile Include="Helpers\DB\DBHelper.cs" />
+    <Compile Include="Helpers\DB\DBMetaDataClass.cs" />
     <Compile Include="Helpers\DB\DBOperationsStatistics.cs" />
     <Compile Include="Helpers\DirectoryHelper.cs" />
     <Compile Include="Helpers\EncryptionHelper.cs" />
@@ -177,11 +208,20 @@
     <EmbeddedResource Include="Controls\DateTimeRangePickerJ.resx">
       <DependentUpon>DateTimeRangePickerJ.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Controls\exTextBox.resx">
+      <DependentUpon>exTextBox.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Controls\frmShowTextDialog.resx">
       <DependentUpon>frmShowTextDialog.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\GridViewII\GridView.resx">
       <DependentUpon>GridView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ListViewGrid.resx">
+      <DependentUpon>ListViewGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\MASKEDTEXTBOX.RESX">
+      <DependentUpon>MASKEDTEXTBOX.CS</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\PJLControls\COLOURPANEL.RESX">
       <DependentUpon>COLOURPANEL.CS</DependentUpon>
