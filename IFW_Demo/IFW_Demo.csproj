@@ -46,6 +46,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forms\frmColorPicker.CS">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmGridview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmIO_Lib.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmTestEGrid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmTestEGrid.Designer.cs">
+      <DependentUpon>frmTestEGrid.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmMain.cs">
       <SubType>Form</SubType>
     </Compile>

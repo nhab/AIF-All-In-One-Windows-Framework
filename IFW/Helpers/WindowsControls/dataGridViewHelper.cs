@@ -5,7 +5,7 @@ using System.Data;
 using System.Linq;
 using System.Windows.Forms;
 
-namespace IFramework.Helpers.WindowsControls
+namespace Helpers.WindowsControls
 {
     public class DataGridViewHelper
     {

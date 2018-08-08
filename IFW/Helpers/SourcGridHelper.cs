@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace IFramework.Helpers
+namespace Helpers
 {
     public class SourceGridHelper
     {

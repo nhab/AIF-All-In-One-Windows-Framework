@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace IFramework.Helpers
+namespace Helpers.DB
 {
     public class QueryBuildHelper
     {

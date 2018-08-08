@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace IFramework.Helpers.WindowsControls
+namespace WindowsControls
 {
     public class FormHelper
     {

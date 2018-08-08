@@ -1,4 +1,5 @@
 ﻿
+using Helpers.DB;
 using IFramework.Controller;
 using IFramework.Model;
 using System.Collections;
@@ -6,7 +7,7 @@ using System.Collections.Generic;
 
 using System.Windows.Forms;
 
-namespace IFramework.Helpers
+namespace Helpers
 {
     public class ComboboxHelper
     {

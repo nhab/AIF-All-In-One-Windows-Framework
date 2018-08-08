@@ -1,7 +1,7 @@
 ﻿using System.Text;
 using System.Security.Cryptography;
 
-namespace IFramework.Helpers
+namespace Helpers
 {
     using System;
     using System.Text;

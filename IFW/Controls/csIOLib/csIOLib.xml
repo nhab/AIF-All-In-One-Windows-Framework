@@ -1,0 +1,389 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>csIOLib</name>
+    </assembly>
+    <members>
+        <member name="T:csIOLib.Directory">
+            <summary>
+            Provides methods to operate on directories.
+            </summary>
+        </member>
+        <member name="M:csIOLib.Directory.#ctor">
+            <summary>
+            An instance of this class is not available. Use the static methods instead.
+            </summary>
+        </member>
+        <member name="M:csIOLib.Directory.ParseDirectories(System.String)">
+            <summary>
+            Returns an array of all directories in the given path
+            </summary>
+            <param name="path">A path you want to parse</param>
+            <returns>An array of all directories in the given path</returns>
+        </member>
+        <member name="M:csIOLib.Directory.EnumerateFolders(System.IO.DirectoryInfo@,System.Collections.ArrayList@,System.Boolean@)">
+            <summary>
+            Recursively scans the given path and returns an array of all sub directories.Do not call this function directly, call the wrapper function instead.
+            </summary>
+            <param name="folder">The folder you want to scan</param>
+            <param name="list">The list which will be populated. It must be pre-Initialized</param>
+            <param name="resumeOnError">Indicates whether to throw exceptions on error or to continue scanning when an error is encountered</param>
+        </member>
+        <member name="M:csIOLib.Directory.EnumerateFolders(System.String,System.Boolean)">
+            <summary>
+            Recursively scans the given path and returns an array of all sub directories
+            </summary>
+            <param name="folder">The folder you want to scan</param>
+            <param name="resumeOnError">Indicates whether to throw exceptions on error or to continue scanning when an error is encountered</param>
+            <returns>An array of all sub directories</returns>
+        </member>
+        <member name="M:csIOLib.Directory.CreateFolder(System.String)">
+            <summary>
+            Creates a Folder
+            </summary>
+            <param name="path">The path to the folder you want to create</param>
+        </member>
+        <member name="M:csIOLib.Directory.CopyFolders(System.String,System.String)">
+            <summary>
+            Copies source directory structure to target directory structure
+            </summary>
+            <param name="source">Folder you want to copy from</param>
+            <param name="target">Folder you want to copy to</param>
+        </member>
+        <member name="M:csIOLib.Directory.CopyFolders(System.String,System.String,System.IO.DirectoryInfo[])">
+            <summary>
+            Copies source directory structure to target directory structure
+            </summary>
+            <param name="source">Folder you want to copy from</param>
+            <param name="target">Folder you want to copy to</param>
+            <param name="list">An array of DirectoryInfo objects</param>
+        </member>
+        <member name="T:csIOLib.BeforeFileCopyEventHandler">
+            <summary>
+            Delegate for BeforeFileCopyEvent
+            </summary>
+        </member>
+        <member name="T:csIOLib.AfterFileCopyEventHandler">
+            <summary>
+            Delegate for AfterFileCopy
+            </summary>
+        </member>
+        <member name="T:csIOLib.UnitCopyEventHandler">
+            <summary>
+            Delegate for UnitCopyEvent
+            </summary>
+        </member>
+        <member name="T:csIOLib.AfterStopEventHandler">
+            <summary>
+            Delegate for AfterStopEvent
+            </summary>
+        </member>
+        <member name="T:csIOLib.File">
+            <summary>
+            Provides methods to operate on files
+            </summary>
+        </member>
+        <member name="M:csIOLib.File.#ctor">
+            <summary>
+            Creates a new instance of File Class
+            </summary>
+        </member>
+        <member name="M:csIOLib.File.GetFiles(System.IO.DirectoryInfo,System.Collections.ArrayList@,System.String)">
+            <summary>
+            Gets files from a directory using a pattern and adds them to referenced arraylist
+            </summary>
+            <param name="dirInfo">Directory to query</param>
+            <param name="list">Arraylist to add results</param>
+            <param name="pattern">Pattern to use for file lookup</param>
+        </member>
+        <member name="M:csIOLib.File.EnumerateFiles(System.String,System.Boolean,System.String)">
+            <summary>
+            Scans a folder and returns an array of files
+            </summary>
+            <param name="path">The folder you want to scan</param>
+            <param name="recurse">Set to true if you want to scan subfolders else false</param>
+            <param name="pattern">The patten of files you want to search for</param>
+            <returns>An array of files</returns>
+        </member>
+        <member name="M:csIOLib.File.EnumerateFiles(System.String,System.Boolean)">
+            <summary>
+            Scans a folder and returns an array of files
+            </summary>
+            <param name="path">The folder you want to scan</param>
+            <param name="recurse">Set to true if you want to scan subfolders else false</param>
+            <returns>An array of files</returns>
+        </member>
+        <member name="M:csIOLib.File.EnumerateFiles(System.String)">
+            <summary>
+            Scans a folder and returns an array of files
+            </summary>
+            <param name="path">The folder you want to scan</param>
+            <returns>An array of files</returns>
+        </member>
+        <member name="M:csIOLib.File.EnumerateFiles(System.IO.DirectoryInfo[])">
+            <summary>
+            Scans specified folders and returns an array of files
+            </summary>
+            <param name="directories">An array of folders to scan</param>
+            <returns>An array of files</returns>
+        </member>
+        <member name="M:csIOLib.File.CompareFiles(System.String,System.String)">
+            <summary>
+            Compares two files
+            </summary>
+            <param name="file1">The first file</param>
+            <param name="file2">The second file</param>
+            <returns>Status of the first file</returns>
+        </member>
+        <member name="M:csIOLib.File.CompareFiles(System.IO.FileInfo,System.IO.FileInfo)">
+            <summary>
+            Compares two files
+            </summary>
+            <param name="file1">The first file</param>
+            <param name="file2">The second file</param>
+            <returns>Status of the first file</returns>
+        </member>
+        <member name="M:csIOLib.File.GetFileName(System.String)">
+            <summary>
+            Parses a file path string and returns the file's name section.
+            </summary>
+            <param name="filePath">Full path to the file</param>
+            <returns>Name of the file</returns>
+        </member>
+        <member name="M:csIOLib.File.GetFileParent(System.String)">
+            <summary>
+            Parses a file path string and returns the file's parent directory section.
+            </summary>
+            <param name="filePath">Full path to the file</param>
+            <returns>Parent directory of the file</returns>
+        </member>
+        <member name="T:csIOLib.File.FileStatus">
+            <summary>
+            Status of files
+            </summary>
+        </member>
+        <member name="F:csIOLib.File.FileStatus.New">
+            <summary>Represents a new file</summary>
+        </member>
+        <member name="F:csIOLib.File.FileStatus.Old">
+            <summary>Represents an old file</summary>
+        </member>
+        <member name="F:csIOLib.File.FileStatus.Same">
+            <summary>Represent similar files</summary>
+        </member>
+        <member name="E:csIOLib.File.BeforeFileCopy">
+            <summary>
+            Event that is raised by CopyFolder method before a file is copied
+            </summary>
+        </member>
+        <member name="E:csIOLib.File.AfterFileCopy">
+            <summary>
+            Event that is raised by CopyFolder method after a file is copied
+            </summary>
+        </member>
+        <member name="E:csIOLib.File.UnitCopy">
+            <summary>
+            Event that is raised by Copy method when a unit is copied
+            </summary>
+        </member>
+        <member name="E:csIOLib.File.AfterStop">
+            <summary>
+            Event that is raised by Copy method after process is successfully stopped by Stop method
+            </summary>
+        </member>
+        <member name="M:csIOLib.File.OnBeforeFileCopy(csIOLib.FileCopyEventArgs)">
+            <summary>
+            Raises BeforeFileCopy Event
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:csIOLib.File.OnAfterFileCopy(csIOLib.FileCopyEventArgs)">
+            <summary>
+            Raises AfterFileCopy Event
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:csIOLib.File.OnUnitCopy(csIOLib.UnitCopyEventArgs)">
+            <summary>
+            Raises UnitCopy Event
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:csIOLib.File.OnAfterStop">
+            <summary>
+            Raises AfterStop Event
+            </summary>
+        </member>
+        <member name="F:csIOLib.File.m_resume">
+            <summary>
+            Specifies whether to stop copying process
+            </summary>
+        </member>
+        <member name="M:csIOLib.File.Stop">
+            <summary>
+            Stops copying and deletes the partly copied file
+            </summary>
+        </member>
+        <member name="M:csIOLib.File.Copy(System.String,System.String,System.Int32,System.Boolean)">
+            <summary>
+            Copies a file in units
+            </summary>
+            <param name="source">Source File</param>
+            <param name="target">Target File</param>
+            <param name="unit">Number of bytes that is copied at once. Reverted to 2^20 if 0</param>
+            <param name="overwriteTarget">Specifies whether the target file is over writen is it already exists otherwise an exception is thrown</param>
+        </member>
+        <member name="M:csIOLib.File.CopyFolder(System.String,System.String,System.Int32,System.Boolean,System.Boolean)">
+            <summary>
+            Copies a folder
+            </summary>
+            <param name="sourceFolder">The folder you want to copy</param>
+            <param name="targetFolder">The folder where the contents of sourcefolder will be copied to</param>
+            <param name="unit">Number of bytes that is copied at once. Reverted to 2^20 if 0</param>
+            <param name="overwriteTarget">Specifies whether the target file is over writen is it already exists otherwise an exception is thrown</param>
+            <param name="recurse">Specify whether to recursively copy all subdirectories of sourcefolder</param>
+        </member>
+        <member name="M:csIOLib.File.CopyFiles(System.IO.FileInfo[],System.String,System.String,System.Int32,System.Boolean)">
+            <summary>
+            Copies files in an array to target folder
+            </summary>
+            <param name="sourceFiles">An array of files to copy</param>
+            <param name="sourceFolder">Source folder (see documentation)</param>
+            <param name="targetFolder">Target Folder (see documentation)</param>
+            <param name="unit">Number of bytes that is copied at once. Reverted to 2^20 if 0</param>
+            <param name="overwriteTarget">Specifies whether the target file is over writen is it already exists otherwise an exception is thrown</param>
+        </member>
+        <member name="T:csIOLib.FileCopyEventArgs">
+            <summary>
+            Arguments that are passed to listener of FileCopy Event
+            </summary>
+        </member>
+        <member name="M:csIOLib.FileCopyEventArgs.#ctor(System.String,System.String,System.Int64,System.Int64,System.Int64)">
+            <summary>
+            Creates a new immutable instance of FileCopyEventArgs
+            </summary>
+            <param name="sourceFile">Path to source file</param>
+            <param name="targetFile">Path to target file</param>
+            <param name="fileSize">Size of source file (in bytes)</param>
+            <param name="totalBytes">Total number of bytes of all files</param>
+            <param name="totalRemainingBytes">Number of bytes remaining from totalBytes</param>
+        </member>
+        <member name="P:csIOLib.FileCopyEventArgs.SourceFile">
+            <summary>
+            Full path to source file
+            </summary>
+        </member>
+        <member name="P:csIOLib.FileCopyEventArgs.TargetFile">
+            <summary>
+            Full path to target file
+            </summary>
+        </member>
+        <member name="P:csIOLib.FileCopyEventArgs.FileSize">
+            <summary>
+            Total size of current file in bytes
+            </summary>
+        </member>
+        <member name="P:csIOLib.FileCopyEventArgs.TotalBytes">
+            <summary>
+            Total number of bytes of all files
+            </summary>
+        </member>
+        <member name="P:csIOLib.FileCopyEventArgs.TotalRemainingBytes">
+            <summary>
+            Number of bytes pending to copy
+            </summary>
+        </member>
+        <member name="P:csIOLib.FileCopyEventArgs.Percent">
+            <summary>
+            Calculates percentage done and returns it
+            </summary>
+        </member>
+        <member name="T:csIOLib.UnitCopyEventArgs">
+            <summary>
+            Arguments that are passed to listener of UnitCopy Event
+            </summary>
+        </member>
+        <member name="M:csIOLib.UnitCopyEventArgs.#ctor(System.String,System.String,System.Int64,System.Int64,System.Int64)">
+            <summary>
+            Creates a new immutable instance of UnitCopyEventArgs
+            </summary>
+            <param name="sourceFile">Path to source file</param>
+            <param name="targetFile">Path to target file</param>
+            <param name="fileSize">Size of source file (in bytes)</param>
+            <param name="totalBytesCopied">Total number of bytes copied from beginning</param>
+            <param name="bytesCopied">Number of bytes copied during this session (usually = unit)</param>
+        </member>
+        <member name="P:csIOLib.UnitCopyEventArgs.SourceFile">
+            <summary>
+            Full path to source file
+            </summary>
+        </member>
+        <member name="P:csIOLib.UnitCopyEventArgs.TargetFile">
+            <summary>
+            Full path to target file
+            </summary>
+        </member>
+        <member name="P:csIOLib.UnitCopyEventArgs.FileSize">
+            <summary>
+            Total size of file in bytes
+            </summary>
+        </member>
+        <member name="P:csIOLib.UnitCopyEventArgs.TotalBytesCopied">
+            <summary>
+            Total number of bytes copied (Accumulated)
+            </summary>
+        </member>
+        <member name="P:csIOLib.UnitCopyEventArgs.BytesCopied">
+            <summary>
+            The number of bytes copied during current session
+            </summary>
+        </member>
+        <member name="P:csIOLib.UnitCopyEventArgs.Percent">
+            <summary>
+            Calculates percentage done and returns it
+            </summary>
+        </member>
+        <member name="T:csIOLib.Utilities">
+            <summary>
+            Miscellaneous functions to support csIOLib
+            </summary>
+        </member>
+        <member name="M:csIOLib.Utilities.#ctor">
+            <summary>
+            An instance is not available. Use static methods instead.
+            </summary>
+        </member>
+        <member name="M:csIOLib.Utilities.ShortPercent(System.Int64,System.Int64)">
+            <summary>
+            Calculates percentage
+            </summary>
+            <param name="total">Total value</param>
+            <param name="value">Current value</param>
+            <returns>Percentage</returns>
+        </member>
+        <member name="M:csIOLib.Utilities.ShortPercent(System.Int32,System.Int32)">
+            <summary>
+            Calculates percentage
+            </summary>
+            <param name="total">Total value</param>
+            <param name="value">Current value</param>
+            <returns>Percentage</returns>
+        </member>
+        <member name="M:csIOLib.Utilities.LongPercent(System.Int64,System.Int64)">
+            <summary>
+            Calculates percentage
+            </summary>
+            <param name="total">Total value</param>
+            <param name="value">Current value</param>
+            <returns>Percentage</returns>
+        </member>
+        <member name="M:csIOLib.Utilities.LongPercent(System.Int32,System.Int32)">
+            <summary>
+            Calculates percentage
+            </summary>
+            <param name="total">Total value</param>
+            <param name="value">Current value</param>
+            <returns>Percentage</returns>
+        </member>
+    </members>
+</doc>

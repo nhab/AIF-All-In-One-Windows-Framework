@@ -55,11 +55,28 @@
     <Compile Include="Controller\ActiveDirectoryUserManagement.cs" />
     <Compile Include="Controller\RoleController.cs" />
     <Compile Include="Controller\UserController.cs" />
+    <Compile Include="Controls\clHoverButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\csIOLib\Directory.cs" />
+    <Compile Include="Controls\csIOLib\File.cs" />
+    <Compile Include="Controls\csIOLib\FileCopyEventArgs.cs" />
+    <Compile Include="Controls\csIOLib\UnitCopyEventArgs.cs" />
+    <Compile Include="Controls\csIOLib\Utilities.cs" />
+    <Compile Include="Controls\CtlClock.CS">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="Controls\DateTimeRangePickerJ.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Controls\DateTimeRangePickerJ.Designer.cs">
       <DependentUpon>DateTimeRangePickerJ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\EditableGrid.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\EditableGrid.Designer.cs">
+      <DependentUpon>EditableGrid.cs</DependentUpon>
     </Compile>
     <Compile Include="Controls\frmShowTextDialog.cs">
       <SubType>Form</SubType>
@@ -67,6 +84,30 @@
     <Compile Include="Controls\frmShowTextDialog.Designer.cs">
       <DependentUpon>frmShowTextDialog.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controls\GridViewII\GridPersister.cs" />
+    <Compile Include="Controls\GridViewII\GridView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\InputBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\PJLControls\COLOURPANEL.CS" />
+    <Compile Include="Controls\PJLControls\COLOURPANELFORM.CS">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\PJLControls\COLOURPANELWITHCAPTURE.CS">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\PJLControls\COLOURPICKER.CS">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\PJLControls\CUSTOMCOLORPANEL.CS">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\PJLControls\CUSTOMCOLORPICKER.CS">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\PJLControls\UTILS.CS" />
     <Compile Include="Helpers\cmdHelper.cs" />
     <Compile Include="Helpers\CredentialFileHelper.cs" />
     <Compile Include="Helpers\DateTimeHelper.cs" />
@@ -92,6 +133,7 @@
     <Compile Include="Helpers\WindowsControls\FormHelper.cs" />
     <Compile Include="Helpers\WindowsControls\ListViewHelper.cs" />
     <Compile Include="Helpers\DynamicGeneration\DynamicToolbarsHelper.cs" />
+    <Compile Include="Helpers\WindowsControls\TreeviewHelper.cs" />
     <Compile Include="Helpers\ZipHelper.cs" />
     <Compile Include="Model\Role.cs" />
     <Compile Include="Model\User.cs" />
@@ -138,6 +180,27 @@
     <EmbeddedResource Include="Controls\frmShowTextDialog.resx">
       <DependentUpon>frmShowTextDialog.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Controls\GridViewII\GridView.resx">
+      <DependentUpon>GridView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PJLControls\COLOURPANEL.RESX">
+      <DependentUpon>COLOURPANEL.CS</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PJLControls\COLOURPANELFORM.RESX">
+      <DependentUpon>COLOURPANELFORM.CS</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PJLControls\COLOURPANELWITHCAPTURE.RESX">
+      <DependentUpon>COLOURPANELWITHCAPTURE.CS</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PJLControls\COLOURPICKER.RESX">
+      <DependentUpon>COLOURPICKER.CS</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PJLControls\CUSTOMCOLORPANEL.RESX">
+      <DependentUpon>CUSTOMCOLORPANEL.CS</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PJLControls\CUSTOMCOLORPICKER.RESX">
+      <DependentUpon>CUSTOMCOLORPICKER.CS</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -166,6 +229,9 @@
       <Project>{2a5a1657-dba8-4117-8e2a-9f1236ace9e2}</Project>
       <Name>SourceGrid</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Controls\csIOLib\csIOLib.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
