@@ -4,4 +4,4 @@ It include many libraries, Helpers classes and Controls .
 
 They  are easily plugable and reusable beccause they dont have extra dependencies.
 
-Even At function level they are Independent.For example  Helper classes have Independent static classes.
+Even At function level they are Independent.For example  Helper classes have Independent static functions.
