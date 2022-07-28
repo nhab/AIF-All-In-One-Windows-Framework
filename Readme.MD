@@ -1,7 +1,9 @@
-<h2>Another  C# Framework for windows desktop application developement</h2>
+<h2>A C# Framework for application developement</h2>
 
-It include many libraries, Helpers classes and Controls .
+The framework i written by considering least coupling concerns.
 
-They  are easily plugable and reusable beccause they dont have extra dependencies.
+It includes many libraries, Helpers classes and windows Controls .
 
-Even At function level they are Independent.For example  Helper classes have Independent static functions.
+They are easily plugable and reusable beccause they dont have extra dependencies.
+
+Even At the function level, they are Independent. For example,All Helper classes have Independent static functions.
