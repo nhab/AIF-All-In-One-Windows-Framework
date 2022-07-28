@@ -1,4 +1,4 @@
-<h2>A C# Framework for application developement</h2>
+<h2>IFW : A C# Framework for application developement</h2>
 
 The framework i written by considering least coupling concerns.
 
