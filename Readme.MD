@@ -7,3 +7,5 @@ It includes many libraries, Helpers classes and windows Controls .
 They are easily plugable and reusable beccause they dont have extra dependencies.
 
 Even At the function level, they are Independent. For example,All Helper classes have Independent static functions.
+
+It Includes Controls like Editable Grid and GridList and libraries for pdf files and files management.
