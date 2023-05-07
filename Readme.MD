@@ -11,8 +11,14 @@
 ## Includes
 - Libraries, Helpers classes and windows Controls
 
-- Controls like __Editable Grid__ and __GridList__ for windows
+- Controls like **Editable Grid** , **GridView**, **GridList** for windows
 
 - **Libraries for working with pdf** files 
 
-- Files management library.
+- Files management library
+
+- Active directory Users and roles Management
+
+- Standalone Users and roles management system
+
+
