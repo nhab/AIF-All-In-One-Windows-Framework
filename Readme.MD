@@ -48,26 +48,26 @@
 
 - **Dynamic form and toolbar Generators **
 
-** Helper classes for common windows controls ** like listview,treeview,datagrid helpers
+- **Helper classes for common windows controls ** like listview,treeview,datagrid helpers
 
-** CredentialsFile helper **
+- **CredentialsFile helper **
 
-** DateTime Helper **
+- **DateTime Helper **
 
-** Directory, File and FTP/sFTP Helper **
+- **Directory, File and FTP/sFTP Helper **
 
-** Encription helper **
+- **Encription helper **
 
-** office Helper** To save results into excel
+- **Office Helper** To save results into excel
 
-** Project Helper** to show a window form an assembley
+- **Project Helper** to show a window form an assembley
 
-** Persian Helper** to convert date to jalali and georgian
+- **Persian Helper** to convert date to jalali and georgian
 
-** Source grid helper **
+- **Source grid helper **
 
-** String Helper **
+- **String Helper **
 
-** zip Helper **
+- **Zip Helper **
 
-** Webservice helper**
+- **Webservice helper**
