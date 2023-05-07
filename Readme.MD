@@ -8,34 +8,15 @@
   
   For example,All Helper classes have Independent static functions.
   
-## Libraries, Helpers classes :
+## Libraries :
 
 - **Libraries for working with pdf** files 
 
 - **CSLOLib**: File and folders management library
 
-- Active directory Users and roles Management
+- **Active directory** Users and roles Management
 
-- Standalone Users and roles management system
-
-
-## Controls for windows  :
-
-- **Editable Grid** , **GridView**, **GridList** , **ListviewGrid**
-
-- **Custom color picker**, **Color palnel**
-
-- **DateTime Range Picker**
-
-- **MaskedEditBox**, **Extende Textbox**
-
-- **HoverButton**
-
-- **ComboboxEX**
-
-- **Folder selection contro**
-
-- **Custom dialogs**
+- Standalone **Users and roles management system**
 
 ## Helper Classes
 
@@ -72,3 +53,21 @@
 - **String Helper**
 
 - **Webservice helper**
+
+## Controls for windows  :
+
+- **Editable Grid** , **GridView**, **GridList** , **ListviewGrid**
+
+- **Custom color picker**, **Color palnel**
+
+- **DateTime Range Picker**
+
+- **MaskedEditBox**, **Extende Textbox**
+
+- **HoverButton**
+
+- **ComboboxEX**
+
+- **Folder selection contro**
+
+- **Custom dialogs**
