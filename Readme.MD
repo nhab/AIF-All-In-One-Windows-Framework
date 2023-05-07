@@ -1,11 +1,11 @@
-<h2>IFW : A C# Framework for application developement</h2>
-
-The framework i written by considering least coupling concerns.
-
-It includes many libraries, Helpers classes and windows Controls .
-
-They are easily plugable and reusable beccause they dont have extra dependencies.
-
-Even At the function level, they are Independent. For example,All Helper classes have Independent static functions.
-
-It Includes Controls like Editable Grid and GridList and libraries for pdf files and files management.
+** IFW : A C# Framework for application developement
+*** Features:
+- least coupling concerns 
+- They are easily plugable and reusable because they dont have extra dependencies.
+  Even At the function level, they are Independent. 
+  For example,All Helper classes have Independent static functions.
+*** Includes
+- Libraries, Helpers classes and windows Controls
+- Controls like __Editable Grid__ and __GridList__ for windows
+- **Libraries for working with pdf** files 
+- Files management library.
