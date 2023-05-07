@@ -2,9 +2,9 @@
 ## Features:
 - Least coupling concerns 
 
-- They are easily plugable and reusable because they dont have extra dependencies.
+- Plugable and reusable classes with no extra dependencies.
 
-  Even At the function level, they are Independent. 
+- Independent, Even At the function level. 
   
   For example,All Helper classes have Independent static functions.
   
