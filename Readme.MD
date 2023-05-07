@@ -8,7 +8,7 @@
   
   For example,All Helper classes have Independent static functions.
   
-## Libraries, Helpers classes and windows Controls
+## Libraries, Helpers classes :
 
 
 - **Libraries for working with pdf** files 
@@ -20,11 +20,28 @@
 - Standalone Users and roles management system
 
 
-## Controls for windows like 
+## Controls for windows  :
 
-**Editable Grid** , **GridView**, **GridList** 
+**Editable Grid** , **GridView**, **GridList** , **ListviewGrid**
 
 **Custom color picker**, **Color palnel**
 
 **DateTime Range Picker**
 
+**MaskedEditBox**, **Extende Textbox**
+
+**HoverButton**
+
+**ComboboxEX**
+
+**Folder selection contro**
+
+**Custom dialogs**
+
+## Helper Classes
+
+** DB Helper** for all Database operations
+
+** DB Metadata** for Filling listView and listboxes with Data table items
+
+** QueryBuilder Helper **
