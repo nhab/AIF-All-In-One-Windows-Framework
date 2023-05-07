@@ -22,31 +22,31 @@
 
 ## Controls for windows  :
 
-**Editable Grid** , **GridView**, **GridList** , **ListviewGrid**
+- **Editable Grid** , **GridView**, **GridList** , **ListviewGrid**
 
-**Custom color picker**, **Color palnel**
+- **Custom color picker**, **Color palnel**
 
-**DateTime Range Picker**
+- **DateTime Range Picker**
 
-**MaskedEditBox**, **Extende Textbox**
+- **MaskedEditBox**, **Extende Textbox**
 
-**HoverButton**
+- **HoverButton**
 
-**ComboboxEX**
+- **ComboboxEX**
 
-**Folder selection contro**
+- **Folder selection contro**
 
-**Custom dialogs**
+- **Custom dialogs**
 
 ## Helper Classes
 
-** DB Helper** for all Database operations
+- **DB Helper** for all Database operations
 
-** DB Metadata** for Filling listView and listboxes with Data table items
+- **DB Metadata** for Filling listView and listboxes with Data table items
 
-** QueryBuilder Helper **
+- **QueryBuilder Helper **
 
-** Dynamic form and toolbar Generators **
+- **Dynamic form and toolbar Generators **
 
 ** Helper classes for common windows controls ** like listview,treeview,datagrid helpers
 
