@@ -1,4 +1,4 @@
-# IFW : Framework for Windows application developement
+# IFW : All in one Framework for Windows application developement
 ## Features:
 - Least coupling concerns 
 
