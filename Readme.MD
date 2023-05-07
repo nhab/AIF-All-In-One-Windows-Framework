@@ -44,19 +44,19 @@
 
 - **DB Metadata** for Filling listView and listboxes with Data table items
 
-- **QueryBuilder Helper **
+- **QueryBuilder Helper**
 
-- **Dynamic form and toolbar Generators **
+- **Dynamic form and toolbar Generators**
 
-- **Helper classes for common windows controls ** like listview,treeview,datagrid helpers
+- **Helper classes for common windows controls** like listview,treeview,datagrid helpers
 
-- **CredentialsFile helper **
+- **CredentialsFile helper**
 
-- **DateTime Helper **
+- **DateTime Helper**
 
-- **Directory, File and FTP/sFTP Helper **
+- **Directory, File and FTP/sFTP Helper**
 
-- **Encription helper **
+- **Encription helper**
 
 - **Office Helper** To save results into excel
 
@@ -64,10 +64,10 @@
 
 - **Persian Helper** to convert date to jalali and georgian
 
-- **Source grid helper **
+- **Source grid helper**
 
-- **String Helper **
+- **String Helper**
 
-- **Zip Helper **
+- **Zip Helper**
 
 - **Webservice helper**
