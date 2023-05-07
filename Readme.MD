@@ -1,6 +1,6 @@
 # IFW : A C# Framework for application developement
 ## Features:
-- least coupling concerns 
+- Least coupling concerns 
 
 - They are easily plugable and reusable because they dont have extra dependencies.
 
