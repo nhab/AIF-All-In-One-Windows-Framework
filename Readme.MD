@@ -1,4 +1,4 @@
-# IFW : A C# Framework for application developement
+# IFW : Framework for Windows application developement
 ## Features:
 - Least coupling concerns 
 
