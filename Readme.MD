@@ -10,7 +10,6 @@
   
 ## Libraries, Helpers classes :
 
-
 - **Libraries for working with pdf** files 
 
 - **CSLOLib**: File and folders management library
@@ -56,6 +55,10 @@
 
 - **Directory, File and FTP/sFTP Helper**
 
+-  **Zip Helper**
+
+- **Cmd Helper**
+
 - **Encription helper**
 
 - **Office Helper** To save results into excel
@@ -67,7 +70,5 @@
 - **Source grid helper**
 
 - **String Helper**
-
-- **Zip Helper**
 
 - **Webservice helper**
