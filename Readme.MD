@@ -8,17 +8,23 @@
   
   For example,All Helper classes have Independent static functions.
   
-## Includes
-- Libraries, Helpers classes and windows Controls
+## Libraries, Helpers classes and windows Controls
 
-- Controls like **Editable Grid** , **GridView**, **GridList** for windows
 
 - **Libraries for working with pdf** files 
 
-- Files management library
+- **CSLOLib**: File and folders management library
 
 - Active directory Users and roles Management
 
 - Standalone Users and roles management system
 
+
+## Controls for windows like 
+
+**Editable Grid** , **GridView**, **GridList** 
+
+**Custom color picker**, **Color palnel**
+
+**DateTime Range Picker**
 
