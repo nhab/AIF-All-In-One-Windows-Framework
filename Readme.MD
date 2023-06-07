@@ -1,4 +1,4 @@
-# Aif : All in one Framework for Windows application developement
+# Aif : All in one Framework for Windows forms application developement
 ## Features:
 - Least coupling concerns 
 
