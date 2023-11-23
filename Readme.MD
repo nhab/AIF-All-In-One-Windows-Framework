@@ -71,7 +71,7 @@ gridView1.SetColumnWidth("Company", 15); // sets the width of the column in font
 gridView1.SetColumnWidth("E-mail", 20); // sets the width of the column in font units
 
 gridView1.SizeToFitGrid();
-//Add rows to ther grid:
+//Adding rows to ther grid:
 gridView1.SetFullRow(
 	2,
 	new string[]{"John", "Doe", "Microsoft", "joe@aol.com"}
