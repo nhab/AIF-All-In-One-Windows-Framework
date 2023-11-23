@@ -1,4 +1,5 @@
 # Aif : All in one Framework for Windows forms application developement
+
 ## Features:
 - Least coupling concerns 
 
@@ -7,7 +8,13 @@
 - Independent, Even At the function level. 
   
   For example,All Helper classes have Independent static functions.
-  
+
+## Demos, Sample Codes,How Tos
+
+To see the samples code for for each section refere to IFW_Demo wproject within the solution.
+
+There is a seperate form to show capabilities of each topic
+
 ## Libraries :
 
 - **Libraries for working with pdf** files 
@@ -60,6 +67,8 @@
 
 Usage:
 ```
+GridViewRelease.GridView gridView1 = new GridViewRelease.GridView (); 
+
 //Setting columns title and name:
 gridView1.SetColumnNames(
 	new string[]{"FirstName", "LastName","Company","E-mail"}
