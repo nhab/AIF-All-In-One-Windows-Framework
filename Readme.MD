@@ -106,6 +106,16 @@ gridView1.SetCellTextColor(4, "E-mail", Color.Yellow);
 gridView1.SetCellColor(2, "Company", Color.BlueViolet);
 gridView1.SetCellTextColor(2, "Company", Color.Coral);
 ```
+
+- **SourceGrid**
+```
+grid1.Redim(2, 2);
+grid1[0,0] = new SourceGrid2.Cells.Real.Cell("Hello from Cell 0,0");
+grid1[1,0] = new SourceGrid2.Cells.Real.Cell("Hello from Cell 1,0");
+grid1[0,1] = new SourceGrid2.Cells.Real.Cell("Hello from Cell 0,1");
+grid1[1,1] = new SourceGrid2.Cells.Real.Cell("Hello from Cell 1,1");
+```
+
 - **GridList** , **ListviewGrid**
 
 - **Custom color picker**, **Color palnel**
