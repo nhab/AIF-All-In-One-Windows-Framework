@@ -56,7 +56,38 @@
 
 ## Controls for windows  :
 
-- **Editable Grid** , **GridView**, **GridList** , **ListviewGrid**
+- **Editable Grid** , **GridView**
+Usage:
+```
+//Setting columns title and name:
+gridView1.SetColumnNames(
+	new string[]{"FirstName", "LastName","Company","E-mail"}
+);
+
+//Settings withs of columns
+gridView1.SetColumnWidth("FirstName", 10); // sets the width of the column in font units
+gridView1.SetColumnWidth("LastName", 10); // sets the width of the column in font units
+gridView1.SetColumnWidth("Company", 15); // sets the width of the column in font units
+gridView1.SetColumnWidth("E-mail", 20); // sets the width of the column in font units
+
+gridView1.SizeToFitGrid();
+//Add rows to ther grid:
+gridView1.SetFullRow(
+	2,
+	new string[]{"John", "Doe", "Microsoft", "joe@aol.com"}
+);
+//Setting an specific cell:
+gridView1.SetCell(4, "E-mail", "bob@hotmail.com");
+
+// set color of text and cell
+gridView1.SetCellColor(4, "E-mail", Color.Blue);
+gridView1.SetCellTextColor(4, "E-mail", Color.Yellow);
+
+// set color of text and cell
+gridView1.SetCellColor(2, "Company", Color.BlueViolet);
+gridView1.SetCellTextColor(2, "Company", Color.Coral);
+```
+- **GridList** , **ListviewGrid**
 
 - **Custom color picker**, **Color palnel**
 
