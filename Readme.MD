@@ -63,7 +63,16 @@ There is a seperate form to show capabilities of each topic
 
 ## Controls for windows  :
 
-- **Editable Grid** , **GridView**
+- **Editable Grid** 
+
+Usage:
+```
+//init
+EditableGrid editableGrid1;
+ editableGrid1.Dim(5, 5);
+```
+
+- **GridView**
 
 Usage:
 ```
