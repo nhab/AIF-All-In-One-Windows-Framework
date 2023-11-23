@@ -40,28 +40,24 @@ namespace WinControls
 
 		private void InitializeGrid()
 		{
-			gridView1.SetColumnNames(new string[]
-			{
-				"FirstName", 
-				"LastName",
-				"Company",
-				"E-mail"
-			}
-				);
+			//Setting columns title and name:
+			gridView1.SetColumnNames(
+				new string[]{"FirstName", "LastName","Company","E-mail"}
+			);
 			
+			//Settings withs of columns
 			gridView1.SetColumnWidth("FirstName", 10); // sets the width of the column in font units
 			gridView1.SetColumnWidth("LastName", 10); // sets the width of the column in font units
 			gridView1.SetColumnWidth("Company", 15); // sets the width of the column in font units
 			gridView1.SetColumnWidth("E-mail", 20); // sets the width of the column in font units
 
 			gridView1.SizeToFitGrid();
-			
-			gridView1.SetFullRow(2, new string[]
-			{
-				"John", "Doe", "Microsoft", "joe@aol.com"
-			}
-				);
-
+			//Adding rows to ther grid:
+			gridView1.SetFullRow(
+				2,
+				new string[]{"John", "Doe", "Microsoft", "joe@aol.com"}
+			);
+			//Setting an specific cell:
 			gridView1.SetCell(4, "E-mail", "bob@hotmail.com");
 
 			// set color of text and cell
